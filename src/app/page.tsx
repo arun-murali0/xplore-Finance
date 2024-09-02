@@ -2,7 +2,8 @@ import Hero from '@/view/Hero';
 import Navbar from '@/view/Navbar';
 import Pricing from '@/view/Pricing';
 import Newsletter from '@/view/newsletter';
-import Footer from "@/view/Footer"
+import Footer from '@/view/Footer';
+import Review from '@/view/Review';
 
 export default function page() {
   return (
@@ -12,7 +13,8 @@ export default function page() {
         <Hero />
         <Pricing />
         <Newsletter />
-        <Footer/>
+        <Review />
+        <Footer />
       </main>
     </div>
   );
