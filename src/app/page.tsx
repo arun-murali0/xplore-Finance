@@ -1,7 +1,7 @@
 import Hero from '@/view/Hero';
 import Navbar from '@/view/Navbar';
 import Pricing from '@/view/Pricing';
-import Newsletter from '@/view/newsletter';
+import Newsletter from '@/view/Newsletter';
 import Footer from '@/view/Footer';
 import Review from '@/view/Review';
 
