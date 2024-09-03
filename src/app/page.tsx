@@ -7,9 +7,9 @@ import Review from '@/view/Review';
 
 export default function page() {
   return (
-    <div className='flex flex-col items-center w-full'>
+    <div className='flex flex-col items-center w-full max-sm:p-1'>
       <Navbar />
-      <main className='flex flex-col items-center justify-center py-20 h-full'>
+      <main className='flex flex-col items-center justify-center py-20 h-full max-md:m-auto'>
         <Hero />
         <Pricing />
         <Newsletter />
