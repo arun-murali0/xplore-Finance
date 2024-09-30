@@ -63,3 +63,25 @@ export const reviews = [
     body: "I'm at a loss for words. This is amazing. I love it.",
   },
 ];
+
+export const accordion = [
+  {
+    title: 'Who should take these courses ?',
+    description:
+      'Our courses are suitable for beginners with no prior knowledge as well as intermediate and advanced traders looking to refine their strategies and skills.',
+  },
+  {
+    title: 'What prerequisites do I need ?',
+    description:
+      'No prerequisites are required! We start with the basics of stock market concepts, then progress to advanced topics like options trading and technical analysis.',
+  },
+  {
+    title: ' Do you offer live sessions or webinars ?',
+    description:
+      'Yes, we occasionally host live Q&A sessions and webinars with experts. Be sure to check our events calendar for upcoming dates!',
+  },
+  {
+    title: ' How long will I have access to the course ?',
+    description: 'Your course will be accessible for 1 year.',
+  },
+];

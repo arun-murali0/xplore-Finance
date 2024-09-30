@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
 import { Button } from '@/components/ui/button';
-import { createClient } from '@/utils/supabase/supabaseClient';
 import { redirect } from 'next/navigation';
 import Wrapper from '@/global/Wrapper';
 import Link from 'next/link';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { userRegister } from '@/utils/validation/register';
+import { supabaseClient } from '@/utils/supabase/supabaseClient';
 
 interface IRegister {
   email: string;
@@ -16,7 +16,7 @@ interface IRegister {
 }
 
 export default function Register() {
-  const supabase = createClient();
+  const supabase = supabaseClient;
 
   const {
     register,
@@ -25,21 +25,18 @@ export default function Register() {
     formState: { errors, isSubmitting },
   } = useForm<IRegister>({ resolver: zodResolver(userRegister) });
 
-  const onSubmit: SubmitHandler<IRegister> = async (data, event) => {
-    event?.preventDefault();
+  const onSubmit: SubmitHandler<IRegister> = async (user, event) => {
     try {
       const { error } = await supabase.auth.signUp({
-        email: data.email,
-        password: data.password,
+        email: user.email,
+        password: user.password,
       });
       if (error) {
-        console.log('Sign Up Error:', error.message);
-      } else {
-        console.log('User created successfully');
-        redirect('/'); // Redirect after successful signup
+        console.log(error);
       }
+      console.log('created successfully');
     } catch (error) {
-      console.log('Unexpected Error:', error);
+      console.log(error);
     }
   };
 
@@ -65,7 +62,7 @@ export default function Register() {
             <label htmlFor='password'>Password</label>
             <div className='my-2'>
               <input
-                placeholder='password'
+                placeholder='*******'
                 type='password'
                 className='w-full p-2 bg-muted rounded-sm outline-primary-foreground'
                 {...register('password')}
@@ -78,14 +75,16 @@ export default function Register() {
             <label htmlFor='confirmPassword'>Confirm Password</label>
             <div className='my-2'>
               <input
-                placeholder='confirm password'
+                placeholder='*******'
                 type='password'
                 className='w-full p-2 bg-muted rounded-sm outline-primary-foreground'
                 {...register('confirmPassword')}
                 onClick={() => trigger('confirmPassword')}
               />
             </div>
-            <span className='text-red-400'>{errors.confirmPassword?.message}</span>
+            <span className='text-red-400'>
+              {errors.confirmPassword?.message}
+            </span>
           </div>
 
           <Button className='w-full my-5 mt-5' disabled={isSubmitting}>

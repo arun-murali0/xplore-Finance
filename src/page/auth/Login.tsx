@@ -6,13 +6,14 @@ import Link from 'next/link';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { userLogin, userLoginSchema } from '@/utils/validation/userLogin';
 import { zodResolver } from '@hookform/resolvers/zod';
-
-
+import { supabaseClient } from '@/utils/supabase/supabaseClient';
 
 interface ILogin {
   email: string;
   password: string;
 }
+
+const supabase = supabaseClient;
 
 export default function Login() {
   const {
@@ -24,10 +25,19 @@ export default function Login() {
     resolver: zodResolver(userLogin),
   });
 
-  
-
-  const onSubmit: SubmitHandler<ILogin> = async (data) => {
-   
+  const onSubmit: SubmitHandler<ILogin> = async (user) => {
+    try {
+      const { error } = await supabase.auth.signUp({
+        email: user.email,
+        password: user.password,
+      });
+      if (error) {
+        console.log(error);
+      }
+      console.log('created successfully');
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -52,7 +62,7 @@ export default function Login() {
             <label htmlFor='password'>Password</label>
             <div className='my-2'>
               <input
-                placeholder='password'
+                placeholder='*****'
                 type='password'
                 className='w-full p-2 bg-muted rounded-sm outline-primary-foreground'
                 {...register('password')}
