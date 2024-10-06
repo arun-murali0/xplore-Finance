@@ -5,7 +5,7 @@ import Newsletter from "@/view/Newsletter";
 import Footer from "@/view/Footer";
 import Review from "@/view/Review";
 import FAQ from "@/view/FAQ";
-// import Products from "@/view/Products";
+import Products from "@/view/Product";
 
 export default function page() {
   return (
@@ -13,11 +13,9 @@ export default function page() {
       <Navbar />
       <main className="flex flex-col items-center justify-center py-20 h-full max-md:m-auto">
         <Hero />
-        {/* <Products /> */}
+        <Products />
         <Pricing />
-
         <FAQ />
-
         <Review />
         {/* <Newsletter /> */}
         <Footer />

@@ -1,99 +1,98 @@
 export const pricingCards = [
   {
-    title: 'pack-1',
-    description: 'pack-1 description',
-    price: 'Free',
-    duration: 'time',
-    highlight: 'Key features',
-    buttonText: 'Start for free',
-    features: ['Limited projects', '1 Team member', 'Basic features'],
-    priceId: '',
+    title: "pack-1",
+    description: "pack-1 description",
+    price: "Free",
+    duration: "time",
+    highlight: "Key features",
+    buttonText: "Start for free",
+    features: ["Limited projects", "1 Team member", "Basic features"],
+    priceId: "",
   },
   {
-    title: 'pack-1',
-    description: 'pack-1 description',
-    price: 'Free',
-    duration: 'time',
-    highlight: 'Key features',
-    buttonText: 'Start for free',
-    features: ['Limited projects', '1 Team member', 'Basic features'],
-    priceId: '',
+    title: "pack-1",
+    description: "pack-1 description",
+    price: "Free",
+    duration: "time",
+    highlight: "Key features",
+    buttonText: "Start for free",
+    features: ["Limited projects", "1 Team member", "Basic features"],
+    priceId: "",
   },
   {
-    title: 'pack-1',
-    description: 'pack-1 description',
-    price: 'Free',
-    duration: 'time',
-    highlight: 'Key features',
-    buttonText: 'Start for free',
-    features: ['Limited projects', '1 Team member', 'Basic features'],
-    priceId: '',
+    title: "pack-1",
+    description: "pack-1 description",
+    price: "Free",
+    duration: "time",
+    highlight: "Key features",
+    buttonText: "Start for free",
+    features: ["Limited projects", "1 Team member", "Basic features"],
+    priceId: "",
   },
 ];
 
 export const reviews = [
   {
-    name: 'Jack',
-    username: '@jack',
+    name: "Jack",
+    username: "@jack",
     body: "I've never seen anything like this before. It's amazing. I love it.",
   },
   {
-    name: 'Jill',
-    username: '@jill',
+    name: "Jill",
+    username: "@jill",
     body: "I don't know what to say. I'm speechless. This is amazing.",
   },
   {
-    name: 'John',
-    username: '@john',
+    name: "John",
+    username: "@john",
     body: "I'm at a loss for words. This is amazing. I love it.",
   },
   {
-    name: 'Jane',
-    username: '@jane',
+    name: "Jane",
+    username: "@jane",
     body: "I'm at a loss for words. This is amazing. I love it.",
   },
   {
-    name: 'Jenny',
-    username: '@jenny',
+    name: "Jenny",
+    username: "@jenny",
     body: "I'm at a loss for words. This is amazing. I love it.",
   },
   {
-    name: 'James',
-    username: '@james',
+    name: "James",
+    username: "@james",
     body: "I'm at a loss for words. This is amazing. I love it.",
   },
 ];
 
 export const accordion = [
   {
-    title: 'Who should take these courses ?',
+    title: "Who should take these courses ?",
     description:
-      'Our courses are suitable for beginners with no prior knowledge as well as intermediate and advanced traders looking to refine their strategies and skills.',
+      "Our courses are suitable for beginners with no prior knowledge as well as intermediate and advanced traders looking to refine their strategies and skills.",
   },
   {
-    title: 'What prerequisites do I need ?',
+    title: "What prerequisites do I need ?",
     description:
-      'No prerequisites are required! We start with the basics of stock market concepts, then progress to advanced topics like options trading and technical analysis.',
+      "No prerequisites are required! We start with the basics of stock market concepts, then progress to advanced topics like options trading and technical analysis.",
   },
   {
-    title: ' Do you offer live sessions or webinars ?',
+    title: " Do you offer live sessions or webinars ?",
     description:
-      'Yes, we occasionally host live Q&A sessions and webinars with experts. Be sure to check our events calendar for upcoming dates!',
+      "Yes, we occasionally host live Q&A sessions and webinars with experts. Be sure to check our events calendar for upcoming dates!",
   },
   {
-    title: ' How long will I have access to the course ?',
-    description: 'Your course will be accessible for 1 year.',
+    title: " How long will I have access to the course ?",
+    description: "Your course will be accessible for 1 year.",
   },
 ];
 
-
 export const cardDetails = [
   {
-    description: 'Lana Del Rey',
-    title: 'Summertime Sadness',
-    src: 'https://assets.aceternity.com/demos/lana-del-rey.jpeg',
-    ctaText: 'Visit',
-    ctaLink: 'https://ui.aceternity.com/templates',
+    description: "Lana Del Rey",
+    title: "Summertime Sadness",
+    src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
+    ctaText: "Visit",
+    ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
         <p>
@@ -113,44 +112,41 @@ export const cardDetails = [
   },
 ];
 
-
-
-
 export const Cards = [
   {
-    cardTitle: 'Title-1',
-    cardDescription: 'something...........',
-    cardFooter: 'know more',
-    cardImage: '',
+    cardTitle: "Foundation of Financial Freedom",
+    cardDescription: "something...........",
+    cardFooter: "know more",
+    cardImage: "",
+    learn: [
+      "-Creating Multiple Income Stream",
+      "-Unlocking Wealth Instruments",
+      "-Developing Winning Habits",
+      "-Risk Proofing Approach",
+    ],
   },
   {
-    cardTitle: 'Title-2',
-    cardDescription: 'something...........',
-    cardFooter: 'know more',
-    cardImage: '',
+    cardTitle: "The Art of Investing",
+    cardDescription: "something...........",
+    cardFooter: "know more",
+    cardImage: "",
+    learn: [
+      "-Understanding the reasons why you should invest",
+      "-infering financial statements",
+      "-Identifying entry and exits",
+    ],
   },
   {
-    cardTitle: 'Title-3',
-    cardDescription: 'something...........',
-    cardFooter: 'know more',
-    cardImage: '',
-  },
-  {
-    cardTitle: 'Title-4',
-    cardDescription: 'something...........',
-    cardFooter: 'know more',
-    cardImage: '',
-  },
-  {
-    cardTitle: 'Title-5',
-    cardDescription: 'something...........',
-    cardFooter: 'know more',
-    cardImage: '',
-  },
-  {
-    cardTitle: 'Title-6',
-    cardDescription: 'something...........',
-    cardFooter: 'know more',
-    cardImage: '',
+    cardTitle: "Mastering option selling",
+    cardDescription: "something...........",
+    cardFooter: "know more",
+    cardImage: "",
+    learn: [
+      "-Fundamentals of options trading",
+      "-Advanced strategies",
+      "-Identifying selling opportunities",
+      "-Achieving consistent returns",
+      "-Margin management",
+    ],
   },
 ];
