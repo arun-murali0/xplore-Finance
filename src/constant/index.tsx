@@ -115,7 +115,8 @@ export const cardDetails = [
 export const Cards = [
   {
     cardTitle: "Foundation of Financial Freedom",
-    cardDescription: "something...........",
+    cardAuthor: "By Yabesh Raj",
+    cardDescription: "",
     cardFooter: "know more",
     cardImage: "",
     learn: [
@@ -127,7 +128,8 @@ export const Cards = [
   },
   {
     cardTitle: "The Art of Investing",
-    cardDescription: "something...........",
+    cardAuthor: "By Yabesh Raj",
+    cardDescription: "",
     cardFooter: "know more",
     cardImage: "",
     learn: [
@@ -138,7 +140,8 @@ export const Cards = [
   },
   {
     cardTitle: "Mastering option selling",
-    cardDescription: "something...........",
+    cardAuthor: "By Yabesh Raj",
+    cardDescription: "",
     cardFooter: "know more",
     cardImage: "",
     learn: [
