@@ -25,7 +25,7 @@ export const ExapandableCard: FC<cardProp> = ({
           </div>
           <div
             className={cn(
-              "leading-5 text-[14px] text-muted-foreground",
+              "leading-7 text-[14px] text-muted-foreground",
               className
             )}
           >
@@ -36,10 +36,10 @@ export const ExapandableCard: FC<cardProp> = ({
             >
               What you will learn:
             </div>
-            <div className={cn("my-1")}>{content}</div>
+            <div className={cn("my-1 leading-6")}>{content}</div>
           </div>
         </div>
-        <Button className="w-full">Add to Cart</Button>
+        <Button className="w-full my-1">Add to Cart</Button>
       </Container>
     </div>
   );

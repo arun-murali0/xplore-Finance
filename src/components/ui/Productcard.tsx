@@ -5,18 +5,11 @@ import { Badge } from "./badge";
 interface cardProp {
   title: String;
   content: String;
-  footer: String;
   className?: String;
   img: StaticImageData;
 }
 
-export const Card: FC<cardProp> = ({
-  title,
-  content,
-  footer,
-  className,
-  img,
-}) => {
+export const Card: FC<cardProp> = ({ title, content, className, img }) => {
   return (
     <section
       className={`${className} max-h-fit max-w-full border border-muted-foreground rounded-lg`}
@@ -38,9 +31,9 @@ export const Card: FC<cardProp> = ({
             English / Tamil
           </Badge>
         </div>
-
-        <div>
-          <Button className="w-full my-4">{footer}</Button>
+        <div className="flex justify-between items-center my-4">
+          <p className="text-muted-foreground text-sm">total no .of buy</p>
+          <p className="text-muted-foreground text-sm">total duration</p>
         </div>
       </div>
     </section>

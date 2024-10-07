@@ -15,7 +15,7 @@ export default function productsList() {
   return (
     <Wrapper className="mt-10">
       <Breadcrum />
-      <Container className="flex justify-center items-center gap-2 mt-10 max-md:flex max-md:flex-col max-md:gap-2 max-md:w-full">
+      <Container className="flex justify-center items-center gap-2 mt-10 max-md:flex max-md:flex-col max-md:gap-2 max-md:w-full relative">
         <div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-blue-500 rounded-full blur-[10rem] -z-10"></div>
         {Cards.map((cardlist, index) => (
           <div key={index}>
@@ -24,7 +24,6 @@ export default function productsList() {
                 <Card
                   img={dummy}
                   title={cardlist.cardTitle}
-                  footer={cardlist.cardFooter}
                   content={cardlist.cardAuthor}
                 />
               </HoverCardTrigger>
