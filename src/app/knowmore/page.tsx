@@ -1,9 +1,12 @@
-import CardDetails from '@/view/expandableCards';
+// import CardDetails from '';
 
+// export default function page() {
+//   return (
+//     <div>
+//       <CardDetails />
+//     </div>
+//   );
+// }
 export default function page() {
-  return (
-    <div>
-      <CardDetails />
-    </div>
-  );
+  return <div>page</div>;
 }
