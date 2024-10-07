@@ -8,7 +8,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/cards";
+} from "@/components/ui/card";
 import { pricingCards } from "@/constant";
 import Link from "next/link";
 import { cn } from "@/lib/utils";

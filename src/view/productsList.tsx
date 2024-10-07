@@ -9,6 +9,7 @@ import {
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
 import Breadcrum from "./Breadcrum";
+import { ExapandableCard } from "@/components/ui/ExapandableCard";
 
 export default function productsList() {
   return (
@@ -27,7 +28,19 @@ export default function productsList() {
                   content={cardlist.cardAuthor}
                 />
               </HoverCardTrigger>
-              <HoverCardContent>hi</HoverCardContent>
+              <HoverCardContent>
+                <ExapandableCard
+                  key={index}
+                  title={cardlist.cardTitle}
+                  content={cardlist.learn.map((list, index) => {
+                    return (
+                      <ul key={index}>
+                        <li>{list}</li>
+                      </ul>
+                    );
+                  })}
+                />
+              </HoverCardContent>
             </HoverCard>
           </div>
         ))}
