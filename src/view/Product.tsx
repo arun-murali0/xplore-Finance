@@ -19,8 +19,8 @@ export default function Product() {
           <div>
             <p className="text-sm leading-6 mb-5 text-balance text-muted-foreground">
               At Xplore Finance, we believe that financial mastery is within
-              everyone's reach.Our platform is dedicated to empowering you to
-              take charge of your financial destiny with confidence and
+              everyone reach.Our platform is dedicated to empowering you to take
+              charge of your financial destiny with confidence and
               expertise.Whether you are a novice,looking to understand the
               basics or an experienced trader aiming to refine your skills.our
               comprehensive courses are designed to meet your needs
