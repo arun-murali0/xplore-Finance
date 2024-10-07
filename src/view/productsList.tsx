@@ -35,7 +35,7 @@ export default function productsList() {
                   content={cardlist.learn.map((list, index) => {
                     return (
                       <ul key={index}>
-                        <li>{list}</li>
+                        <li className="my-[2px]">{list}</li>
                       </ul>
                     );
                   })}
