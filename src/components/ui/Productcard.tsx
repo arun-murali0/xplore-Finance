@@ -26,12 +26,12 @@ export const Card: FC<cardProp> = ({ title, content, className, img }) => {
           {title}
         </div>
         <div className="flex justify-between items-center">
-          <div className="text-muted-foreground text-xs my-2">{content}</div>
+          <div className="text-muted-foreground text-xs my-3">{content}</div>
           <Badge variant={"secondary"} className="text-muted-foreground">
             English / Tamil
           </Badge>
         </div>
-        <div className="flex justify-between items-center my-4">
+        <div className="flex justify-between items-center mb-5">
           <p className="text-muted-foreground text-sm">total no .of buy</p>
           <p className="text-muted-foreground text-sm">total duration</p>
         </div>

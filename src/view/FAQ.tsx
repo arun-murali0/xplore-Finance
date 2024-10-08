@@ -14,7 +14,7 @@ export default function FAQ() {
     <Wrapper className="max-w-3xl">
       <div className="hidden md:block absolute top-0  -left-full w-72 h-72 bg-blue-500 rounded-full blur-[10rem] -z-10"></div>
       <Container delay={0.4} className="my-2">
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center my-3">
           <SectionBadge title="FAQ" />
         </div>
         <Accordion type="single" collapsible>

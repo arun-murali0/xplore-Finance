@@ -22,13 +22,13 @@ export default function Hero() {
             href="/register"
             className="flex items-center justify-center w-max rounded-full  px-2 py-1 md:py-2 gap-2 md:gap-8 shadow-3xl  cursor-pointer select-none"
           >
-            <p className="text-muted-foreground text-md text-center md:text-base font-medium pl-4 pr-4 lg:pr-0">
+            <p className="text-secondary-foreground text-sm text-center md:text-base font-medium pl-4 pr-4 lg:pr-0">
               ✨ Start Your Journey to Financial Mastery
             </p>
             <Button
               size="sm"
               variant={"outline"}
-              className="text-lg p-6 rounded-lg text-primary-foreground border-b-card-foreground"
+              className="text-lg p-6 rounded-lg text-primary-foreground border-b-primary"
             >
               Sign Up Today !
             </Button>

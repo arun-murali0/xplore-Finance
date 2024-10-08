@@ -1,4 +1,4 @@
-import ProductsList from "@/view/productsList";
+import ProductsList from "@/view/productList";
 
 export default function page() {
   return (
