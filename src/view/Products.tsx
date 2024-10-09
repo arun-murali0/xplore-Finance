@@ -1,9 +1,11 @@
 import Container from "@/global/container";
 import Wrapper from "@/global/Wrapper";
+import ProductCard from "@/components/ui/productCard";
+import { CardDetails } from "@/constant";
 
 export default function Products() {
   return (
-    <Wrapper className="max-w-3xl mx-auto">
+    <Wrapper className="max-w-5xl mx-auto">
       <Container className=" py-20">
         <div className="flex flex-col justify-center items-center">
           <div className="text-sm text-heading my-2">our Products</div>
@@ -14,7 +16,17 @@ export default function Products() {
             your financial journey.
           </div>
         </div>
-        <div></div>
+        <div className="flex flex-wrap">
+          {CardDetails.map((card, index) => (
+            <div key={index}>
+              <ProductCard
+                title={card.cardTitle}
+                author={card.cardAuthor}
+                content={card.learn}
+              />
+            </div>
+          ))}
+        </div>
       </Container>
     </Wrapper>
   );

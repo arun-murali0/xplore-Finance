@@ -61,18 +61,6 @@ export const CardDetails = [
     ],
   },
   {
-    cardTitle: "The Art of Investing",
-    cardAuthor: "By Yabesh Raj",
-    cardDescription: "",
-    cardFooter: "know more",
-    cardImage: "",
-    learn: [
-      "-Understanding the reasons why you should invest",
-      "-infering financial statements",
-      "-Identifying entry and exits",
-    ],
-  },
-  {
     cardTitle: "Mastering option selling",
     cardAuthor: "By Yabesh Raj",
     cardDescription: "",
@@ -84,6 +72,18 @@ export const CardDetails = [
       "-Identifying selling opportunities",
       "-Achieving consistent returns",
       "-Margin management",
+    ],
+  },
+  {
+    cardTitle: "The Art of Investing",
+    cardAuthor: "By Yabesh Raj",
+    cardDescription: "",
+    cardFooter: "know more",
+    cardImage: "",
+    learn: [
+      "-Understanding the reasons why you should invest",
+      "-infering financial statements",
+      "-Identifying entry and exits",
     ],
   },
 ];
