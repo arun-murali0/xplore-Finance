@@ -1,0 +1,21 @@
+import Container from "@/global/container";
+import Wrapper from "@/global/Wrapper";
+
+export default function Products() {
+  return (
+    <Wrapper className="max-w-3xl mx-auto">
+      <Container className=" py-20">
+        <div className="flex flex-col justify-center items-center">
+          <div className="text-sm text-heading my-2">our Products</div>
+          <div className="text-3xl my-1">Discover Our Programs</div>
+          <div className="text-muted-foreground text-center my-2">
+            Unlock your trading potential with our specialized programs. Each
+            product delivers essential strategies and insights to guide you on
+            your financial journey.
+          </div>
+        </div>
+        <div></div>
+      </Container>
+    </Wrapper>
+  );
+}

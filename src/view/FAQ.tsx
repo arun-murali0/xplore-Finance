@@ -11,7 +11,10 @@ import { accordion } from "@/constant";
 export default function FAQ() {
   return (
     <Wrapper className="max-w-3xl mx-auto">
-      <Container delay={0.4} className="my-2 flex justify-center items-center">
+      <Container
+        delay={0.4}
+        className="my-2 flex justify-center items-center py-20"
+      >
         <div>
           <div className="flex justify-center items-center flex-col">
             <div className="text-heading text-sm">FAQ</div>
