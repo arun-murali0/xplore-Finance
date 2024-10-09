@@ -1,6 +1,7 @@
 import Container from "@/global/container";
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const Navbar = async () => {
   return (
@@ -30,21 +31,9 @@ const Navbar = async () => {
             </ul>
           </nav>
           <div className="flex items-center gap-4">
-            <Link
-              href="/login"
-              className={buttonVariants({ size: "sm", variant: "ghost" })}
-            >
-              Login
-            </Link>
-            <Link
-              href="#"
-              className={buttonVariants({
-                size: "sm",
-                className: "hidden md:flex bg-blue-800 hover:bg-blue-700",
-              })}
-            >
-              Subscribe
-            </Link>
+            <Button className="p-6 rounded-full">
+              <Link href="/login">Login</Link>
+            </Button>
           </div>
         </div>
       </Container>
