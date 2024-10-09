@@ -48,19 +48,6 @@ export const accordion = [
 
 export const CardDetails = [
   {
-    cardTitle: "Foundation of Financial Freedom",
-    cardAuthor: "By Yabesh Raj",
-    cardDescription: "",
-    cardFooter: "know more",
-    cardImage: "",
-    learn: [
-      "-Creating Multiple Income Stream",
-      "-Unlocking Wealth Instruments",
-      "-Developing Winning Habits",
-      "-Risk Proofing Approach",
-    ],
-  },
-  {
     cardTitle: "Mastering option selling",
     cardAuthor: "By Yabesh Raj",
     cardDescription: "",
@@ -84,6 +71,19 @@ export const CardDetails = [
       "-Understanding the reasons why you should invest",
       "-infering financial statements",
       "-Identifying entry and exits",
+    ],
+  },
+  {
+    cardTitle: "Foundation of Financial Freedom",
+    cardAuthor: "By Yabesh Raj",
+    cardDescription: "",
+    cardFooter: "know more",
+    cardImage: "",
+    learn: [
+      "-Creating Multiple Income Stream",
+      "-Unlocking Wealth Instruments",
+      "-Developing Winning Habits",
+      "-Risk Proofing Approach",
     ],
   },
 ];

@@ -16,13 +16,15 @@ export default function Products() {
             your financial journey.
           </div>
         </div>
-        <div className="flex flex-wrap">
+        <div className="grid grid-cols-2">
           {CardDetails.map((card, index) => (
             <div key={index}>
               <ProductCard
                 title={card.cardTitle}
                 author={card.cardAuthor}
-                content={card.learn}
+                content={card.learn.map((list, index) => {
+                  return <div key={index}>{list}</div>;
+                })}
               />
             </div>
           ))}
