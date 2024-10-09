@@ -22,7 +22,7 @@ export default function Hero() {
             <Link href={"/register"}>
               <Button
                 size="sm"
-                className="text-lg p-6 rounded-full text-primary bg-primary text-white border-b-primary"
+                className="text-lg p-6 rounded-full text-primary bg-primary text-white border-b-primary hover:bg-heading hover:text-primary-foreground"
               >
                 Get Started
               </Button>

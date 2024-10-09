@@ -15,22 +15,22 @@ const Navbar = async () => {
           </div>
           <nav className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <ul className="flex items-center justify-center gap-8">
-              <Link href="#" className="hover:text-foreground/80 text-sm">
+              <Link href="#" className="hover:text-heading text-sm">
                 Product
               </Link>
-              <Link href="#" className="hover:text-foreground/80 text-sm">
+              <Link href="#" className="hover:text-heading text-sm">
                 Service
               </Link>
-              <Link href="#" className="hover:text-foreground/80 text-sm">
+              <Link href="#" className="hover:text-heading text-sm">
                 Tools
               </Link>
-              <Link href="#" className="hover:text-foreground/80 text-sm">
+              <Link href="#" className="hover:text-heading text-sm">
                 Blog
               </Link>
             </ul>
           </nav>
           <div className="flex items-center gap-4">
-            <Button className="p-6 rounded-full">
+            <Button className="p-6 rounded-full hover:bg-heading">
               <Link href="">Login</Link>
             </Button>
           </div>
