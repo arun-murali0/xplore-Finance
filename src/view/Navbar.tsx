@@ -1,5 +1,4 @@
 import Container from "@/global/container";
-import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
@@ -32,7 +31,7 @@ const Navbar = async () => {
           </nav>
           <div className="flex items-center gap-4">
             <Button className="p-6 rounded-full">
-              <Link href="/login">Login</Link>
+              <Link href="">Login</Link>
             </Button>
           </div>
         </div>
