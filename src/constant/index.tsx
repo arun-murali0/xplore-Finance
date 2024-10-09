@@ -112,7 +112,7 @@ export const cardDetails = [
   },
 ];
 
-export const Cards = [
+export const CardDetails = [
   {
     cardTitle: "Foundation of Financial Freedom",
     cardAuthor: "By Yabesh Raj",
