@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const Navbar = async () => {
   return (
-    <header className="px-4 h-14 sticky top-0 inset-x-0 w-full bg-background/40 backdrop-blur-lg  z-50">
+    <header className="px-4 h-20 sticky top-0 inset-x-0 w-full bg-background/40 backdrop-blur-lg  z-50">
       <Container reverse>
         <div className="flex items-center justify-between h-full mx-auto md:max-w-screen-xl">
           <div className="flex items-start">
