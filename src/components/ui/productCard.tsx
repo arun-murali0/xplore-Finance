@@ -6,9 +6,9 @@ import dummy from "../../../public/dummy.webp";
 interface cardProp {
   title: String;
   author: String;
-  price: String;
+  price?: String;
   imageUrl?: StaticImageData;
-  content?: String;
+  content?: any;
 }
 
 const ProductCard: FC<cardProp> = ({
@@ -29,7 +29,13 @@ const ProductCard: FC<cardProp> = ({
 
         <h4 className="font-semibold text-lg mb-2">What You will Learn:</h4>
         <div className="list-disc list-inside text-muted-foreground mb-4">
-          {content}
+          {content?.map((list: any, index: any) => {
+            return (
+              <div key={index}>
+                <li>{list}</li>l
+              </div>
+            );
+          })}
         </div>
 
         <p className="font-semibold text-xl mb-4">

@@ -22,9 +22,7 @@ export default function Products() {
               <ProductCard
                 title={card.cardTitle}
                 author={card.cardAuthor}
-                content={card.learn.map((list, index) => {
-                  return <div key={index}>{list}</div>;
-                })}
+                content={card.learn}
               />
             </div>
           ))}
