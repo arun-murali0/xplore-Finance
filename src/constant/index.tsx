@@ -1,66 +1,26 @@
-export const pricingCards = [
-  {
-    title: "pack-1",
-    description: "pack-1 description",
-    price: "Free",
-    duration: "time",
-    highlight: "Key features",
-    buttonText: "Start for free",
-    features: ["Limited projects", "1 Team member", "Basic features"],
-    priceId: "",
-  },
-  {
-    title: "pack-1",
-    description: "pack-1 description",
-    price: "Free",
-    duration: "time",
-    highlight: "Key features",
-    buttonText: "Start for free",
-    features: ["Limited projects", "1 Team member", "Basic features"],
-    priceId: "",
-  },
-  {
-    title: "pack-1",
-    description: "pack-1 description",
-    price: "Free",
-    duration: "time",
-    highlight: "Key features",
-    buttonText: "Start for free",
-    features: ["Limited projects", "1 Team member", "Basic features"],
-    priceId: "",
-  },
-];
+import { CiUnlock } from "react-icons/ci";
+import { AiOutlineThunderbolt } from "react-icons/ai";
+import { MdOutlineEditNote } from "react-icons/md";
 
-export const reviews = [
+// how it works section
+export const works = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
+    title: "Enhance Your Trading Skills",
+    icon: <AiOutlineThunderbolt />,
+    description:
+      "Unlock successful trading with expert guidance. Learn to analyze market trends, implement effective risk management, and develop the discipline needed for long-term success.",
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
+    title: "Transform Your Trading Approach",
+    icon: <MdOutlineEditNote />,
+    description:
+      "Revolutionize your trading by mastering market analysis and risk management. Gain insights into market data while building the patience essential for thriving in the market.",
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-  },
-  {
-    name: "Jane",
-    username: "@jane",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-  },
-  {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-  },
-  {
-    name: "James",
-    username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    title: "Unlock Your Trading Potential",
+    icon: <CiUnlock />,
+    description:
+      "Discover your trading potential with tailored programs. Learn to navigate market trends, protect your capital, and develop a resilient mindset for confident decision-making.",
   },
 ];
 
@@ -83,32 +43,6 @@ export const accordion = [
   {
     title: " How long will I have access to the course ?",
     description: "Your course will be accessible for 1 year.",
-  },
-];
-
-export const cardDetails = [
-  {
-    description: "Lana Del Rey",
-    title: "Summertime Sadness",
-    src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
-    ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
-    content: () => {
-      return (
-        <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
-        </p>
-      );
-    },
   },
 ];
 

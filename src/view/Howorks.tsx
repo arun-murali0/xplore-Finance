@@ -1,5 +1,7 @@
+import { WorkCard } from "@/components/ui/cardWorks";
 import Container from "@/global/container";
 import Wrapper from "@/global/Wrapper";
+import { works } from "@/constant";
 
 export default function Howorks() {
   return (
@@ -16,10 +18,16 @@ export default function Howorks() {
           resources are designed to help you make informed decisions and thrive
           in the trading landscape.
         </div>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div className="flex justify-between items-center gap-3">
+          {works.map((work, index) => (
+            <div key={index}>
+              <WorkCard
+                title={work.title}
+                icon={work.icon}
+                content={work.description}
+              />
+            </div>
+          ))}
         </div>
       </Container>
     </Wrapper>
