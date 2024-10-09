@@ -6,10 +6,7 @@ import { works } from "@/constant";
 export default function Howorks() {
   return (
     <Wrapper className="mx-auto max-w-5xl">
-      <Container
-        className="flex flex-col items-center justify-center h-full max-md:m-auto py-20 "
-        delay={0.5}
-      >
+      <Container className="flex flex-col items-center justify-center h-full max-md:m-auto py-20 ">
         <div className="text-heading text-sm my-2">How we Help</div>
         <h1 className="text-3xl my-2">How We Support Your Trading Journey</h1>
         <div className="leading-6 my-4 text-center text-muted-foreground text-wrap">

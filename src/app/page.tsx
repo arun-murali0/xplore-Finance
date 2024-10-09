@@ -1,5 +1,6 @@
 import Hero from "@/view/Hero";
 import Howorks from "@/view/Howorks";
+import FAQ from "@/view/FAQ";
 
 export default function page() {
   return (
@@ -7,6 +8,7 @@ export default function page() {
       <section>
         <Hero />
         <Howorks />
+        <FAQ />
       </section>
     </div>
   );

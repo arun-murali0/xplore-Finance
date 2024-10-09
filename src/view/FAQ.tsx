@@ -10,26 +10,34 @@ import { accordion } from "@/constant";
 
 export default function FAQ() {
   return (
-    <Wrapper className="max-w-3xl">
-      <div className="hidden md:block absolute top-0  -left-full w-72 h-72 bg-blue-500 rounded-full blur-[10rem] -z-10"></div>
-      <Container delay={0.4} className="my-2">
-        <div className="flex justify-center items-center my-3">HAQ</div>
-        <Accordion type="single" collapsible>
-          {accordion.map((item, index) => {
-            return (
-              <div key={index}>
-                <AccordionItem value={`value-${index}`} className="my-5">
-                  <AccordionTrigger className="text-xl">
-                    {item.title}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground text-[18px]">
-                    {item.description}
-                  </AccordionContent>
-                </AccordionItem>
-              </div>
-            );
-          })}
-        </Accordion>
+    <Wrapper className="max-w-3xl mx-auto">
+      <Container delay={0.4} className="my-2 flex justify-center items-center">
+        <div>
+          <div className="flex justify-center items-center flex-col">
+            <div className="text-heading text-sm">FAQ</div>
+            <div className="my-2 text-3xl">Find the Answers You Need</div>
+            <div className="my-3 text-center text-muted-foreground">
+              Explore our FAQ to get quick answers and insights that will guide
+              you through your trading experience
+            </div>
+          </div>
+          <Accordion type="single" collapsible>
+            {accordion.map((item, index) => {
+              return (
+                <div key={index}>
+                  <AccordionItem value={`value-${index}`} className="my-5">
+                    <AccordionTrigger className="text-xl">
+                      {item.title}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground text-[18px]">
+                      {item.description}
+                    </AccordionContent>
+                  </AccordionItem>
+                </div>
+              );
+            })}
+          </Accordion>
+        </div>
       </Container>
     </Wrapper>
   );
