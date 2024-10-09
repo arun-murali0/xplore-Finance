@@ -7,16 +7,13 @@ import {
 import Container from "@/global/container";
 import Wrapper from "@/global/container";
 import { accordion } from "@/constant";
-import SectionBadge from "@/components/ui/section-badge";
 
 export default function FAQ() {
   return (
     <Wrapper className="max-w-3xl">
       <div className="hidden md:block absolute top-0  -left-full w-72 h-72 bg-blue-500 rounded-full blur-[10rem] -z-10"></div>
       <Container delay={0.4} className="my-2">
-        <div className="flex justify-center items-center my-3">
-          <SectionBadge title="FAQ" />
-        </div>
+        <div className="flex justify-center items-center my-3">HAQ</div>
         <Accordion type="single" collapsible>
           {accordion.map((item, index) => {
             return (

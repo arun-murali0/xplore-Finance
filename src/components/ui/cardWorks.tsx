@@ -10,7 +10,7 @@ interface cardProp {
 export const WorkCard: FC<cardProp> = ({ title, content, className, icon }) => {
   return (
     <section
-      className={`max-w-fit h-[300px] p-7 ${className} bg-grey   rounded-xl shadow-sm bg-gray-100`}
+      className={`max-w-fit h-[300px] p-7 ${className} bg-grey   rounded-xl shadow-sm bg-card`}
     >
       <div className="border rounded-full bg-green-400 w-10 h-10 flex justify-center items-center mx-auto mt-3">
         <div className="text-lg">{icon}</div>
