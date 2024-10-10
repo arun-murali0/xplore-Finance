@@ -16,13 +16,13 @@ export default function Hero() {
         </p>
         <div className="hidden md:flex relative items-center justify-center mt-8 md:mt-12 w-full">
           <div className="flex items-center justify-center w-max rounded-full  px-2 py-1 md:py-2 gap-2 md:gap-8 shadow-3xl  select-none">
-            <p className="text-heading text-sm text-center md:text-base font-medium pl-4 pr-4 lg:pr-0">
+            <p className="text-primary text-sm text-center md:text-base font-medium pl-4 pr-4 lg:pr-0">
               ✨ Start Your Journey to Financial Mastery
             </p>
             <Link href={"/register"}>
               <Button
                 size="sm"
-                className="text-lg p-6 rounded-full text-primary bg-primary text-white border-b-primary hover:bg-heading hover:text-primary-foreground"
+                className="text-lg p-6 rounded-full   hover:text-primary-foreground"
               >
                 Get Started
               </Button>

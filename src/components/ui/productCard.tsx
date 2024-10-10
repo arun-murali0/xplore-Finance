@@ -47,7 +47,7 @@ const ProductCard: FC<cardProp> = ({
         </p>
         <a
           href="#"
-          className="block w-full hover:bg-heading bg-primary text-white text-center py-2 rounded transition"
+          className="block w-full bg-primary text-card  text-center py-2 rounded transition hover:text-primary-foreground"
         >
           Buy Now
         </a>

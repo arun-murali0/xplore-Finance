@@ -1,15 +1,19 @@
+"use client";
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils";
 import Navbar from "@/view/Navbar";
+
+import { Store } from "@/store/store";
+import { Provider } from "react-redux";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Xplore Finance",
-  description: "Its about stock market Education",
-};
+// export const metadata: Metadata = {
+//   title: "Xplore Finance",
+//   description: "Its about stock market Education",
+// };
 
 export default function RootLayout({
   children,
@@ -18,14 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={cn(
-          "max-h-screen overflow-x-hidden max-w-full bg-background text-foreground antialiased",
-          inter.className
-        )}
-      >
-        <Navbar />
-        {children}
+      <body>
+        <Provider store={Store}>
+          <Navbar />
+          {children}
+        </Provider>
       </body>
     </html>
   );

@@ -1,10 +1,23 @@
+"use client";
+
 import Container from "@/global/container";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { useSelector, useDispatch } from "react-redux";
+import { RootState, AppDispatch } from "@/store/store";
+import { isDark } from "@/store/userSlice";
 
-const Navbar = async () => {
+const Navbar = () => {
+  const dark = useSelector((state: RootState) => state.user.dark);
+  const dispatch: AppDispatch = useDispatch();
+
+  console.log(dark);
+  const handleToggleDark = () => {
+    dispatch(isDark());
+  };
+
   return (
-    <header className="px-4 h-20 sticky top-0 inset-x-0 w-full bg-background/40 backdrop-blur-lg  z-50">
+    <header className={`px-4 h-20 sticky top-0 inset-x-0 w-full z-50 dark`}>
       <Container reverse>
         <div className="flex items-center justify-between h-full mx-auto md:max-w-screen-xl">
           <div className="flex items-start">
@@ -30,9 +43,10 @@ const Navbar = async () => {
             </ul>
           </nav>
           <div className="flex items-center gap-4">
-            <Button className="p-6 rounded-full hover:bg-heading">
+            <Button className="p-6 rounded-full hover:text-primary-foreground">
               <Link href="">Login</Link>
             </Button>
+            <Button onClick={() => handleToggleDark()}>Dark</Button>
           </div>
         </div>
       </Container>

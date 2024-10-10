@@ -17,7 +17,7 @@ export default function FAQ() {
       >
         <div>
           <div className="flex justify-center items-center flex-col">
-            <div className="text-heading text-sm">FAQ</div>
+            <div className="text-primary text-sm">FAQ</div>
             <div className="my-2 text-3xl">Find the Answers You Need</div>
             <div className="my-3 text-center text-muted-foreground">
               Explore our FAQ to get quick answers and insights that will guide

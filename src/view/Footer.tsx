@@ -6,9 +6,9 @@ import Logo from "../../public/logo.png";
 
 export default function Footer() {
   return (
-    <Wrapper className="bg-card max-w-full ">
+    <Wrapper className="bg-secondary mt-20 rounded-xl max-w-full ">
       <Container
-        className="flex items-center mt-20 max-h-fit py-20 rounded-lg"
+        className="flex items-center mt-10 max-h-fit py-20 rounded-lg"
         delay={0}
       >
         <div className="grid grid-cols-4 gap-20 items-center justify-center px-20">
@@ -23,13 +23,13 @@ export default function Footer() {
           <div>
             <p className="font-bold underline underline-offset-4">Resources</p>
             <ul className="flex flex-col my-3">
-              <Link href="/" className="hover:text-heading">
+              <Link href="/" className="hover:text-primary">
                 Home
               </Link>
-              <Link href="" className="hover:text-heading">
+              <Link href="" className="hover:text-primary">
                 products
               </Link>
-              <Link href="" className="hover:text-heading">
+              <Link href="" className="hover:text-primary">
                 Tools
               </Link>
             </ul>
@@ -39,13 +39,13 @@ export default function Footer() {
               Quick links
             </p>
             <ul className="flex flex-col my-3">
-              <Link href={""} className="hover:text-heading">
+              <Link href={""} className="hover:text-primary">
                 terms
               </Link>
-              <Link href={""} className="hover:text-heading">
+              <Link href={""} className="hover:text-primary">
                 Privacy policy
               </Link>
-              <Link href={"/"} className="hover:text-heading">
+              <Link href={"/"} className="hover:text-primary">
                 support
               </Link>
             </ul>
@@ -55,13 +55,13 @@ export default function Footer() {
               Social Link
             </p>
             <ul className="flex flex-col my-3">
-              <Link href={""} className="hover:text-heading">
+              <Link href={""} className="hover:text-primary">
                 Insta
               </Link>
-              <Link href={""} className="hover:text-heading ">
+              <Link href={""} className="hover:text-primary ">
                 Twitter
               </Link>
-              <Link href={""} className="hover:text-heading">
+              <Link href={""} className="hover:text-primary">
                 Youtube
               </Link>
             </ul>
