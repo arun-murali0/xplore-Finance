@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <Wrapper className="flex flex-col items-center justify-center h-full max-md:m-auto py-16">
       <div className="flex flex-col items-center mt-20 max-w-3xl w-11/12 md:w-full max-sm:mt-8">
-        <h1 className="text-7xl max-md:text-3xl md:!leading-snug font-semibold text-center bg-clip-text bg-gradient-to-b from-gray-50 to-black-50  md:m-auto">
+        <h1 className="text-6xl max-md:text-3xl md:!leading-snug font-semibold text-center bg-clip-text bg-gradient-to-b from-gray-50 to-black-50  md:m-auto">
           Stock Market Mastery
         </h1>
         <p className="text-base text-muted-foreground  mt-6 text-center max-sm:text-pretty max-sm:ms-5">

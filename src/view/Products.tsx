@@ -5,18 +5,18 @@ import { CardDetails } from "@/constant";
 
 export default function Products() {
   return (
-    <Wrapper className="max-w-5xl mx-auto">
-      <Container className=" py-20">
+    <Wrapper className="max-w-full mx-auto">
+      <Container className="py-20">
         <div className="flex flex-col justify-center items-center">
           <div className="text-sm text-heading my-2">our Products</div>
           <div className="text-3xl my-1">Discover Our Programs</div>
-          <div className="text-muted-foreground text-center my-2">
+          <div className="text-muted-foreground text-center my-2 ">
             Unlock your trading potential with our specialized programs. Each
             product delivers essential strategies and insights to guide you on
             your financial journey.
           </div>
         </div>
-        <div className="grid grid-cols-2">
+        <div className="flex justify-center items-center gap-1 flex-wrap mt-3">
           {CardDetails.map((card, index) => (
             <div key={index}>
               <ProductCard

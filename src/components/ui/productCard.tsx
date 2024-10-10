@@ -9,6 +9,7 @@ interface cardProp {
   price?: String;
   imageUrl?: StaticImageData;
   content?: any;
+  className?: String;
 }
 
 const ProductCard: FC<cardProp> = ({
@@ -17,13 +18,16 @@ const ProductCard: FC<cardProp> = ({
   imageUrl,
   price = 200,
   content,
+  className,
 }) => {
   return (
-    <div className="max-w-full rounded-lg overflow-hidden shadow-lg bg-card m-4">
-      <Image className="w-full h-48 object-cover" src={dummy} alt={""} />
+    <div
+      className={`max-w-[300px] rounded-lg overflow-hidden shadow-lg h-[825] bg-card m-4 ${className}`}
+    >
+      <Image className="w-full h-48 object-cover " src={dummy} alt={""} />
       <div className="p-6">
-        <h3 className="text-xl mb-2">{title}</h3>
-        <p className="text-gray-700 mb-4">
+        <h5 className="text-lg mb-2 text-muted-foreground">{title}</h5>
+        <p className="text-gray-700 mb-4 text-sm">
           <strong>Author:</strong> {author}
         </p>
 
@@ -32,7 +36,7 @@ const ProductCard: FC<cardProp> = ({
           {content?.map((list: any, index: any) => {
             return (
               <div key={index}>
-                <li>{list}</li>l
+                <li className="text-sm leading-5">{list}</li>
               </div>
             );
           })}

@@ -9,8 +9,8 @@ export default function contact() {
         <div className="text-3xl">Contact us</div>
         <div className="text-muted-foreground text-xl my-3">
           Have questions? We are just a message away!{" "}
-          <span className="text-white underline mx-2">
-            <Link href={""}>Let s connect</Link>
+          <span className="text-white underline underline-offset-4 mx-2">
+            <Link href={""}>{`Let's connect`}</Link>
           </span>
         </div>
       </Container>
