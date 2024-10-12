@@ -40,10 +40,10 @@ export default function Login() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <Wrapper className="flex justify-center items-center h-screen">
-        <div className="min-h-fit w-96 p-5 rounded-lg shadow-sm shadow-gray-400">
-          <div className="text-center">Welcome Back !</div>
-          <div className="my-5">
+      <Wrapper className="flex justify-center items-center h-screen max-sm:flex max-sm:items-start max-sm:my-10 max-sm:justify-center max-sm:h-fit ">
+        <div className="min-h-fit w-96 p-5 rounded-lg shadow-sm shadow-gray-400 max-sm:min-h-fit">
+          <div className="text-center max-sm:text-base">Welcome Back !</div>
+          <div className="my-5 max-sm:text-sm">
             <label htmlFor="email">Email</label>
             <div className="mt-2">
               <input
@@ -55,8 +55,10 @@ export default function Login() {
               />
             </div>
           </div>
-          <span className="text-red-400">{errors.email?.message}</span>
-          <div className="my-4">
+          <span className="text-red-400 max-sm:text-xs">
+            {errors.email?.message}
+          </span>
+          <div className="my-4 max-sm:text-sm">
             <label htmlFor="password">Password</label>
             <div className="my-2">
               <input
@@ -67,13 +69,17 @@ export default function Login() {
                 onClick={() => trigger("password")}
               />
             </div>
-            <span className="text-red-400">{errors.password?.message}</span>
+            <span className="text-red-400 max-sm:text-xs">
+              {errors.password?.message}
+            </span>
           </div>
           <Button className="w-full my-5 mt-5">Login</Button>
-          <div className="text-center mb-3">
+          <div className="text-center mb-3 max-sm:text-sm">
             New User ?
             <Link href={"/register"}>
-              <span className="text-primary mx-2 mb-2">Sign Up</span>
+              <span className="text-primary mx-2 mb-2 max-sm:text-sm">
+                Sign Up
+              </span>
             </Link>
           </div>
           <div className="text-center">-or-</div>

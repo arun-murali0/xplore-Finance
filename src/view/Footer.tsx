@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <Wrapper className="bg-secondary mt-20 rounded-xl max-w-full max-sm:mt-5 max-sm:rounded-none">
       <Container
-        className="flex items-center mt-10 max-h-fit py-20 max-sm:flex max-sm:gap-2 max-sm:px-1 max-sm:mt-2 max-sm:py-5 max-sm:flex-wrap "
+        className="flex items-center mt-10 max-h-fit py-20 max-sm:flex max-sm:gap-2 max-sm:px-1 max-sm:mt-2 max-sm:py-5 max-sm:flex-wrap"
         delay={0}
       >
         <div className="grid grid-cols-4 gap-20 items-center justify-center px-20 max-sm:px-2 max-sm:grid max-sm:grid-cols-3 max-sm:justify-start max-sm:items-start max-sm:gap-2 ">

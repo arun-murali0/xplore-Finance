@@ -42,10 +42,10 @@ export default function Register() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <Wrapper className="flex justify-center items-center h-screen">
+      <Wrapper className="flex justify-center items-center h-screen max-sm:h-fit max-sm:my-10">
         <div className="min-h-fit w-96 p-5 rounded-lg shadow-sm shadow-gray-400">
           <div className="text-center">Logo - Sign up</div>
-          <div className="my-5">
+          <div className="my-5 max-sm:text-sm">
             <label htmlFor="email">Email</label>
             <div className="mt-2">
               <input
@@ -56,9 +56,11 @@ export default function Register() {
                 onClick={() => trigger("email")}
               />
             </div>
-            <span className="text-red-400">{errors.email?.message}</span>
+            <span className="text-red-400 max-sm:text-xs">
+              {errors.email?.message}
+            </span>
           </div>
-          <div className="my-4">
+          <div className="my-4 max-sm:text-sm">
             <label htmlFor="password">Password</label>
             <div className="my-2">
               <input
@@ -69,9 +71,11 @@ export default function Register() {
                 onClick={() => trigger("password")}
               />
             </div>
-            <span className="text-red-400">{errors.password?.message}</span>
+            <span className="text-red-400 max-sm:text-xs">
+              {errors.password?.message}
+            </span>
           </div>
-          <div className="my-4">
+          <div className="my-4 max-sm:textsm">
             <label htmlFor="confirmPassword">Confirm Password</label>
             <div className="my-2">
               <input
@@ -82,7 +86,7 @@ export default function Register() {
                 onClick={() => trigger("confirmPassword")}
               />
             </div>
-            <span className="text-red-400">
+            <span className="text-red-400 max-sm:text-xs">
               {errors.confirmPassword?.message}
             </span>
           </div>
