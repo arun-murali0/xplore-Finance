@@ -22,7 +22,7 @@ const ProductCard: FC<cardProp> = ({
 }) => {
   return (
     <div
-      className={`max-w-[300px] rounded-lg overflow-hidden shadow-lg h-[825] bg-card m-4 ${className}`}
+      className={`w-[325px] rounded-lg overflow-hidden shadow-lg h-[825] bg-card m-4 ${className}`}
     >
       <Image className="w-full h-48 object-cover " src={dummy} alt={""} />
       <div className="p-6">
