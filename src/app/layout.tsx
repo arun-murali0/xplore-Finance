@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import Navbar from "@/view/Navbar";
 import { Provider, useSelector } from "react-redux";
 import { RootState, Store } from "@/store/store";
+import Footer from "@/view/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = (
     >
       <Navbar />
       {children}
+      <Footer />
     </body>
   );
 };

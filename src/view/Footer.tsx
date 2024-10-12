@@ -3,6 +3,9 @@ import Wrapper from "@/global/Wrapper";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../public/logo.png";
+import { IoLogoInstagram } from "react-icons/io5";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -23,13 +26,22 @@ export default function Footer() {
           <div>
             <p className="font-bold underline underline-offset-4">Resources</p>
             <ul className="flex flex-col my-3">
-              <Link href="/" className="hover:text-primary">
+              <Link
+                href="/"
+                className="hover:text-primary text-muted-foreground max-w-fit"
+              >
                 Home
               </Link>
-              <Link href="" className="hover:text-primary">
+              <Link
+                href=""
+                className="hover:text-primary text-muted-foreground max-w-fit"
+              >
                 products
               </Link>
-              <Link href="" className="hover:text-primary">
+              <Link
+                href=""
+                className="hover:text-primary text-muted-foreground max-w-fit"
+              >
                 Tools
               </Link>
             </ul>
@@ -39,30 +51,36 @@ export default function Footer() {
               Quick links
             </p>
             <ul className="flex flex-col my-3">
-              <Link href={""} className="hover:text-primary">
-                terms
+              <Link
+                href={""}
+                className="hover:text-primary text-muted-foreground max-w-fit"
+              >
+                Terms and Condition
               </Link>
-              <Link href={""} className="hover:text-primary">
+              <Link
+                href={""}
+                className="hover:text-primary text-muted-foreground max-w-fit"
+              >
                 Privacy policy
               </Link>
-              <Link href={"/"} className="hover:text-primary">
+              <Link
+                href={"/"}
+                className="hover:text-primary text-muted-foreground max-w-fit"
+              >
                 support
               </Link>
             </ul>
           </div>
           <div>
-            <p className="font-bold underline underline-offset-4">
-              Social Link
-            </p>
-            <ul className="flex flex-col my-3">
-              <Link href={""} className="hover:text-primary">
-                Insta
+            <ul className="flex gap-5 my-3">
+              <Link href={""} className="hover:text-primary max-w-fit">
+                <IoLogoInstagram />
               </Link>
-              <Link href={""} className="hover:text-primary ">
-                Twitter
+              <Link href={""} className="hover:text-primary max-w-fit">
+                <FaXTwitter />
               </Link>
-              <Link href={""} className="hover:text-primary">
-                Youtube
+              <Link href={""} className="hover:text-primary max-w-fit">
+                <FaYoutube />
               </Link>
             </ul>
           </div>

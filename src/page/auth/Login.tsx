@@ -64,7 +64,7 @@ export default function Login() {
               <input
                 placeholder="*****"
                 type="password"
-                className="w-full p-2 bg-muted rounded-sm outline-primary-foreground"
+                className="w-full p-2 bg-muted rounded-sm "
                 {...register("password")}
                 onClick={() => trigger("password")}
               />
