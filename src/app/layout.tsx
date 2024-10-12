@@ -25,8 +25,8 @@ const Layout: React.FC<{ children: React.ReactNode }> = (
     <body
       className={cn(
         `max-h-screen overflow-x-hidden max-w-full bg-background text-foreground antialiased ${
-          dark ? "dark" : "null"
-        }`
+          inter.className
+        } ${dark ? "dark" : "null"}`
       )}
     >
       <Navbar />

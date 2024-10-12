@@ -4,12 +4,12 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <Wrapper className="flex flex-col items-center justify-center h-full max-md:m-auto py-16">
+    <Wrapper className="flex flex-col items-center justify-center h-full max-md:m-auto py-16 max-sm:px-1">
       <div className="flex flex-col items-center mt-20 max-w-3xl w-11/12 md:w-full max-sm:mt-8">
-        <h1 className="text-6xl max-md:text-3xl md:!leading-snug font-semibold text-center bg-clip-text bg-gradient-to-b from-gray-50 to-black-50  md:m-auto">
+        <h1 className="text-6xl max-md:text-3xl md:!leading-snug font-semibold text-center bg-clip-text bg-gradient-to-b from-gray-50 to-black-50 max-sm:text-2xl">
           Stock Market Mastery
         </h1>
-        <p className="text-base text-muted-foreground  mt-6 text-center max-sm:text-pretty max-sm:ms-5">
+        <p className="text-base text-muted-foreground  mt-6 text-center max-sm:text-sm max-sm:ms-5 max-sm:mt-3 max-sm:text-center">
           Master the art of stock market investing through our comprehensive,
           beginner-friendly courses. Unlock the secrets to smart trading and
           financial growth.
