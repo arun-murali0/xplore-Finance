@@ -68,7 +68,7 @@ export default function Footer() {
           </div>
         </div>
       </Container>
-      <p className="flex justify-center items-center mb-3 text-md">
+      <p className="flex justify-center items-center text-md">
         © 2024 Xplore Finance. All rights reserved.
         <span className="text-muted-foreground ms-1">
           Empowering your financial journey, one step at a time.

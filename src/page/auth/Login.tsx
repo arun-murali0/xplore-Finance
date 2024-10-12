@@ -80,9 +80,6 @@ export default function Login() {
           </div>
           <div className="text-center">-or-</div>
           <Button className="w-full my-3">Continue with google</Button>
-          <div className="text-center text-primary hover:text-blue-600 my-3">
-            <Link href="/">Back to Home Page</Link>
-          </div>
         </div>
       </Wrapper>
     </form>

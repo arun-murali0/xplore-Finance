@@ -1,23 +1,23 @@
-"use client";
-
 import Container from "@/global/container";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { useSelector, useDispatch } from "react-redux";
-import { RootState, AppDispatch } from "@/store/store";
+
+import { LuSunMedium } from "react-icons/lu";
+import { BsFillMoonFill } from "react-icons/bs";
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, RootState } from "@/store/store";
 import { isDark } from "@/store/userSlice";
 
 const Navbar = () => {
-  const dark = useSelector((state: RootState) => state.user.dark);
   const dispatch: AppDispatch = useDispatch();
-
-  console.log(dark);
-  const handleToggleDark = () => {
+  const dark = useSelector((state: RootState) => state.user.dark);
+  const toggleDarkMode = () => {
     dispatch(isDark());
   };
-
   return (
-    <header className={`px-4 h-20 sticky top-0 inset-x-0 w-full z-50 dark`}>
+    <header
+      className={`px-4 h-20 sticky top-0 inset-x-0 w-full bg-background/40 backdrop-blur-lg  z-50`}
+    >
       <Container reverse>
         <div className="flex items-center justify-between h-full mx-auto md:max-w-screen-xl">
           <div className="flex items-start">
@@ -28,25 +28,34 @@ const Navbar = () => {
           </div>
           <nav className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <ul className="flex items-center justify-center gap-8">
-              <Link href="#" className="hover:text-heading text-sm">
+              <Link href="#" className="hover:text-primary text-sm">
                 Product
               </Link>
-              <Link href="#" className="hover:text-heading text-sm">
+              <Link href="#" className="hover:text-primary text-sm">
                 Service
               </Link>
-              <Link href="#" className="hover:text-heading text-sm">
+              <Link href="#" className="hover:text-primary text-sm">
                 Tools
               </Link>
-              <Link href="#" className="hover:text-heading text-sm">
+              <Link href="#" className="hover:text-primary text-sm">
                 Blog
               </Link>
             </ul>
           </nav>
           <div className="flex items-center gap-4">
-            <Button className="p-6 rounded-full hover:text-primary-foreground">
+            <button
+              onClick={toggleDarkMode}
+              className="bg-inherit outline-none text-lg me-4"
+            >
+              {dark ? (
+                <LuSunMedium className="outline-none hover:bg-none fill-primary" />
+              ) : (
+                <BsFillMoonFill className="outline-none hover:bg-none " />
+              )}
+            </button>
+            <Button className="px-6 rounded-full hover:text-primary-foreground">
               <Link href="">Login</Link>
             </Button>
-            <Button onClick={() => handleToggleDark()}>Dark</Button>
           </div>
         </div>
       </Container>

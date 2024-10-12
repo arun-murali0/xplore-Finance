@@ -1,33 +1,49 @@
 "use client";
 
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 import Navbar from "@/view/Navbar";
-
-import { Store } from "@/store/store";
-import { Provider } from "react-redux";
+import { Provider, useSelector } from "react-redux";
+import { RootState, Store } from "@/store/store";
 
 const inter = Inter({ subsets: ["latin"] });
 
 // export const metadata: Metadata = {
 //   title: "Xplore Finance",
-//   description: "Its about stock market Education",
+//   description: "It's about stock market education",
 // };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+const Layout: React.FC<{ children: React.ReactNode }> = (
+  { children },
+  className
+) => {
+  const dark = useSelector((state: RootState) => state.user.dark);
+  return (
+    <body
+      className={cn(
+        `max-h-screen overflow-x-hidden max-w-full bg-background text-foreground antialiased ${
+          dark ? "dark" : "null"
+        }`
+      )}
+    >
+      <Navbar />
+      {children}
+    </body>
+  );
+};
+
+const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <html lang="en">
       <body>
         <Provider store={Store}>
-          <Navbar />
-          {children}
+          <Layout>{children}</Layout>
         </Provider>
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

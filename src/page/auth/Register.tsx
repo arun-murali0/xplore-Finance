@@ -90,10 +90,6 @@ export default function Register() {
           <Button className="w-full my-5 mt-5" disabled={isSubmitting}>
             {isSubmitting ? "Submitting..." : "Sign Up"}
           </Button>
-
-          <div className="text-center text-primary hover:text-blue-600 my-3">
-            <Link href="/">Back to Home Page</Link>
-          </div>
         </div>
       </Wrapper>
     </form>
