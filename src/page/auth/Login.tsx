@@ -67,8 +67,8 @@ export default function Login() {
                 onClick={() => trigger("password")}
               />
             </div>
+            <span className="text-red-400">{errors.password?.message}</span>
           </div>
-          <span className="text-red-400">{errors.password?.message}</span>
           <Button className="w-full my-5 mt-5">Login</Button>
           <div className="text-center mb-3">
             New User ?
