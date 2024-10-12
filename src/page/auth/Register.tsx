@@ -49,7 +49,7 @@ export default function Register() {
             <label htmlFor="email">Email</label>
             <div className="mt-2">
               <input
-                className="w-full p-2 rounded-sm outline-slate-900 bg-muted"
+                className="w-full p-2 rounded-sm bg-muted"
                 placeholder="example@gmail.com"
                 type="email"
                 {...register("email")}
@@ -64,7 +64,7 @@ export default function Register() {
               <input
                 placeholder="*******"
                 type="password"
-                className="w-full p-2 bg-muted rounded-sm outline-primary-foreground"
+                className="w-full p-2 bg-muted rounded-sm"
                 {...register("password")}
                 onClick={() => trigger("password")}
               />
@@ -77,7 +77,7 @@ export default function Register() {
               <input
                 placeholder="*******"
                 type="password"
-                className="w-full p-2 bg-muted rounded-sm outline-primary-foreground"
+                className="w-full p-2 bg-muted rounded-sm"
                 {...register("confirmPassword")}
                 onClick={() => trigger("confirmPassword")}
               />

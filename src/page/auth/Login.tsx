@@ -35,9 +35,7 @@ export default function Login() {
         console.log(error);
       }
       console.log("created successfully");
-    } catch (error) {
-      console.log(error);
-    }
+    } catch (error) {}
   };
 
   return (
@@ -64,7 +62,7 @@ export default function Login() {
               <input
                 placeholder="*****"
                 type="password"
-                className="w-full p-2 bg-muted rounded-sm "
+                className="w-full p-2 bg-muted rounded-sm"
                 {...register("password")}
                 onClick={() => trigger("password")}
               />
