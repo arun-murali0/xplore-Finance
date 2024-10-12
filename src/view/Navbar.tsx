@@ -54,7 +54,7 @@ const Navbar = () => {
               )}
             </button>
             <Button className="px-6 rounded-full hover:text-primary-foreground">
-              <Link href="">Login</Link>
+              <Link href="/login">Login</Link>
             </Button>
           </div>
         </div>
