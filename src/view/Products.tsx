@@ -12,7 +12,7 @@ export default function Products() {
           <div className="text-3xl my-1 max-sm:text-xl">
             Discover Our Programs
           </div>
-          <div className="text-muted-foreground text-center my-2 max-sm:text-sm">
+          <div className="text-muted-foreground text-center my-2 max-sm:text-sm max-sm:text-start">
             Unlock your trading potential with our specialized programs. Each
             product delivers essential strategies and insights to guide you on
             your financial journey.

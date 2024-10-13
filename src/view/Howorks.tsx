@@ -11,7 +11,7 @@ export default function Howorks() {
         <h1 className="text-3xl my-2 max-sm:text-lg max-sm:font-medium max-sm:text-center">
           How We Support Your Trading Journey
         </h1>
-        <div className="leading-6 my-4 text-center text-muted-foreground text-wrap max-sm:text-sm max-sm:text-pretty">
+        <div className="leading-6 my-4 text-center text-muted-foreground text-wrap max-sm:text-sm max-sm:text-start">
           We empower traders with essential skills through focused guidance in
           market analysis, risk management, and mindset development. Our
           resources are designed to help you make informed decisions and thrive

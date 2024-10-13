@@ -16,12 +16,13 @@ export const WorkCard: FC<cardProp> = ({ title, content, className, icon }) => {
         <div className="text-lg max-sm:text-md">{icon}</div>
       </div>
       <div
-        className={`text-[17px] text-wrap mt-5 max-sm:text-center font-medium ${className} max-sm:text-md`}
+        className={`text-[17px] text-wrap mt-5 max-sm:text-start
+           font-medium ${className} max-sm:text-md`}
       >
         {title}
       </div>
       <div
-        className={`text-muted-foreground text-[15px] max-sm:text-sm text-center leading-5 ${className}  my-2`}
+        className={`text-muted-foreground text-[15px] max-sm:text-sm text-center leading-5 ${className}  my-2 max-sm:text-start max-sm:my-4`}
       >
         {content}
       </div>

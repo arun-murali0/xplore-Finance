@@ -19,7 +19,7 @@ export default function FAQ() {
           <div className="flex justify-center items-center flex-col">
             <div className="text-primary text-sm">FAQ</div>
             <div className="my-2 text-2xl">Find the Answers You Need</div>
-            <div className="my-3 text-center text-muted-foreground max-sm:text-sm max-sm:my-1">
+            <div className="my-3 text-center text-muted-foreground max-sm:text-sm max-sm:my-1 max-sm:text-start">
               Explore our FAQ to get quick answers and insights that will guide
               you through your trading experience
             </div>

@@ -74,7 +74,10 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <ul className="flex gap-5 my-3 max-sm:flex max-sm:justify-start max-sm:mt-5">
+            <p className="font-bold underline underline-offset-4 max-sm:font-normal max-sm:text-sm max-sm:no-underline max-sm:my-2 max-sm:flex">
+              Follow us on
+            </p>
+            <ul className="flex gap-5 my-3 max-sm:flex max-sm:justify-start max-sm:mt-1 max-sm:my-1 max-sm:gap-1">
               <Link href={""} className="hover:text-primary max-w-fit">
                 <IoLogoInstagram />
               </Link>
