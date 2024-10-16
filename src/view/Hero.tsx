@@ -8,7 +8,7 @@ export default function Hero() {
     <Wrapper className="flex flex-col items-center justify-center h-full max-md:m-auto py-16 max-sm:px-1">
       <Container
         className="flex flex-col items-center mt-20 max-w-3xl w-11/12 md:w-full max-sm:mt-8 max-sm:flex max-sm:justify-center"
-        delay={0.1}
+        delay={0}
       >
         <h1 className="text-6xl max-md:text-3xl md:!leading-snug font-semibold text-center to-black-50 max-sm:text-3xl max-sm:font-semibold max-sm:tracking-wide">
           Stock Market Mastery
